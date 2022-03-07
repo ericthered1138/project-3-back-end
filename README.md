@@ -8,6 +8,7 @@ Project 3 - E-Commerce Store (Team Project)
 * [Technologies Used](#technologies-used)
 * [Project Requirements](#project-requirements)
 * [Features](#features)
+* [Tests](#tests)
 * [Getting Started](#getting-started)
 * [Application Screenshots](#application-screenshots)
 * [Entity Relationship Diagram](#entity-relationship-diagram)
@@ -31,12 +32,13 @@ The Revtech E-Commerce Application is an Angular Single Page Application (SPA) t
 * Jenkins (Automation Server)
 * Hibernate ORM (Object Relational-Mapping Tool)
 * Spring Framework (Spring Boot, Spring Data, Spring Web, Spring AOP)
-* Spring Secuirty w/ JWT (JSON Web Token)
+* Spring Security w/ JWT (JSON Web Token)
 * JUnit 5 (Testing Framework - Back)
 * Angular2+ (Web Framework)
 * Jasmine / Karma (Testing Framework - Front)
 * Microsoft Visual Studio Code (Source Code Editor)
 * Postman (API Platform)
+* Selenium(Browser Automation)
 
 ## Project Requirements
 1. As a User, I should be able to register a new account.
@@ -52,7 +54,7 @@ The Revtech E-Commerce Application is an Angular Single Page Application (SPA) t
 ## Features
 List of features ready and TODOs for future development
 * Ability to register as a customer
-* Ability to login as an customer or administrator
+* Ability to login as a customer or administrator
 * Ability to view appropriate interfaces upon login dependent upon level of access (admin or customer)
 * Ability to add a product to storefront as an administrator
 * Ability to add a discounted product to storefront as an administrator
@@ -69,10 +71,18 @@ List of features ready and TODOs for future development
 * Ability to add and view customer reviews as a user
 * Ability to view orders history as a user
 
+## Testing Status
+* 76% coverage of methods in the service layer.
+* 72% coverage of methods in the controller layer.
+* Except for the Storage Controller and Test Controller, all routes are currently tested in Postman.
+* All features are tested in Selenium end-to-end tests.
+* Had to use Selenium 3.141.59 to avoid dependency conflicts.
+
 To-do list:
 * Ability to update account information as a user
 * Ability to add items and checkout instantly (buy now) as a user
 * Ability to contact customer support (live chat)
+* Add more sad path testing to admin features in the end-to-end tests.
 
 ## Getting Started
 Please refer to `STARTUP.md` file
@@ -348,3 +358,11 @@ Team Members:
 * Austin Noel (Product Development Team)
 * Tareeq Hamilton (Transaction Development Team)
 * Sameh Botros (Transaction Development Team)
+
+Test Team: 
+* Amanda Gonzalez (Unit Test Development)
+* Eric Jennings (Integration Test Development)
+* Alejandro Lara (Unit Test Development)
+* David Zazulak (End-to-End Test Development)
+
+
