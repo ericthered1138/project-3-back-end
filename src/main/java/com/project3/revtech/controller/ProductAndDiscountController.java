@@ -22,4 +22,5 @@ public class ProductAndDiscountController {
                 .header("Content-type", "application/json")
                 .body(productDiscountService.getOneProductWithDiscount(productId));
     }
+
 }
